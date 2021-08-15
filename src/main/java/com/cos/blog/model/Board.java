@@ -43,7 +43,7 @@ public class Board {
 	@Lob //대용량 데이터
 	private String content; //섬머노트 라이브러리 <html> 태그가 섞여서 디지안되기때문에 용량이 큼
 	
-	private int count; //조회수
+	private int count; //조회수.
 	
 	//EAGER -> 모든 정보를 다 가져옴
 	//LAZY -> 모든 정보X (펼치기기능이 있을경우 사용)
