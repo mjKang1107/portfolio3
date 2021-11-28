@@ -35,8 +35,7 @@ public class UserService {
 		});
 		return user;
 	}
-	
-	
+		
 	@Transactional //하나의 트랜젝션으로 묶인다(정확성) -> 성공하면 자동으로 커밋됨(DB에 저장됨)
 	public void 회원가입(User user) {
 		String rawPassword = user.getPassword(); //1234 원문

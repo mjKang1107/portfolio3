@@ -39,7 +39,7 @@ public class UserApiController {
 //	private HttpSession session;
 	
 	@PostMapping("/auth/joinProc")
-	public ResponseDto<Integer> save(@RequestBody User user,HttpSession session) {//username,password,email 저장되어있음
+	public ResponseDto<Integer> save(@RequestBody User user, HttpSession session) {//username,password,email 저장되어있음
 		System.out.println("UserApiController : save 호출됨");	
 		userService.회원가입(user);
 		return new ResponseDto<Integer>(HttpStatus.OK.value(),1);//자바오브젝트를 JSON으로 변환해서 Jackson으로 리턴
